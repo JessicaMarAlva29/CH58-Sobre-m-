@@ -1,0 +1,201 @@
+/*Resetear estilos del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Declaracion de variables persoanlizadas para nuestras paletas de colores*/
+:root{
+    /*Paleta de colores:*/
+    --color-principal-fondo: #FFD3B6;
+    --color-titulos: #FF7480;
+    --color-texto: rgb(7, 48, 75);
+    --color-botones: #FF8B94;
+    --color-subtitulos: #333;
+    --color-de-tarjeta: #84E3C8; 
+    /*Fuentes*/
+    --fuente-titulo: "Titan One", sans-sserif;
+    --fuente-principal: "Lato", sans-serif;
+    --fuente-subtitulos:"Annie Use Your Telescope", cursive;
+}
+
+body{
+    font-family:"Lato", sans-serif;
+    background-color: var(--color-principal-fondo);
+    color: var(--color-texto);
+   
+    /*text-align: center;*/
+    /*Ya comentamos el de arriba porque ya colocamos display entonces ya podemos utilizar justify-content*/
+    display: flex;
+    justify-content: center;
+}
+
+.page-header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*para llamar clases*/
+.container{
+      max-width: 800px; /*le pongo un limite al borde, ancho maximo en pantallas MUY grandes*/
+      width: 100%; /*Ocupar todo el ancho disponible si esta en 100%*/
+
+ /*Cuanto borde va a utilizar se utilizo para que se viera visiblee
+      border: 10px solid rgb(36, 23, 0);*/
+}
+
+
+h1{
+    font-family: var(--fuente-titulo);
+    font-size: 40px;
+    font-weight: 400;
+    /*margin-bottom: 20px; espaciado hacia abajo, más común*/
+
+    background-image: url(img/brillantina-rosa.jpg);
+    background-size: cover; /*Asegura que la imagen cubra todo el texto*/
+    /* Recorta el fondo para que solo se vea a través del texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidad
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+      color: transparent;
+    /*Colocar contorno negro a la letra*/
+  -webkit-text-stroke-width: 1.5px; /* Define el grosor del contorno */
+  -webkit-text-stroke-color: black; /* El color del contorno */
+
+}
+
+/*Estamos seleccionando (selector descendiente) el párrafo que está dentro del page-header*/
+/*Aunque es más común e intuitivo que se le aplique al que se va a afectar en este caso el h1*/
+.page-header p{
+     margin-top: 50px;
+}
+
+#subtitle{
+    color: var(--color-subtitulos);
+    font-size: 20px;
+    font-family: var(--fuente-subtitulos);
+    font-weight: 600;
+     font-style: normal;
+}
+
+/*------Letras iniciales diamantadas-----*/
+#letter-J{
+    font-size: 4em; /*Unidad de medida relativa*/
+    background-image: url(img/hoja\ dorada.jpg);
+    background-size: cover; /*Asegura que la imagen cubra todo el texto*/
+    /* Recorta el fondo para que solo se vea a través del texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidad
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+      color: transparent;
+    /*Añade un efecto de brillo y destello */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.644),
+               0 0 10px rgba(255, 255, 255, 0.247);
+}
+
+#letter-E{
+    font-size: 4em; /*Unidad de medida relativa*/
+    background-image: url(img/azul.jpg);
+    background-size: cover; /*Asegura que la imagen cubra todo el texto*/
+    /* Recorta el fondo para que solo se vea a través del texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidad
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+      color: transparent;
+    /*Añade un efecto de brillo y destello */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.644),
+               0 0 10px rgba(255, 255, 255, 0.247);
+}
+
+#letter-S{
+    font-size: 4em; /*Unidad de medida relativa*/
+    background-image: url(img/rojo.jpg);
+    background-size: cover; /*Asegura que la imagen cubra todo el texto*/
+    /* Recorta el fondo para que solo se vea a través del texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidad
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+      color: transparent;
+    /*Añade un efecto de brillo y destello */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.644),
+               0 0 10px rgba(255, 255, 255, 0.247);
+}
+
+#letter-S-2{
+    font-size: 4em; /*Unidad de medida relativa*/
+    background-image: url(img/morado.jpg);
+    background-size: cover; /*Asegura que la imagen cubra todo el texto*/
+    /* Recorta el fondo para que solo se vea a través del texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Para compatibilidad
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+      color: transparent;
+    /*Añade un efecto de brillo y destello */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.644),
+               0 0 10px rgba(255, 255, 255, 0.247);
+}
+
+/*  --- CONTENEDOR GENERAL DE LAS TARJETAS ---
+  Esta clase agrupa y distribuye todas las tarjetas en una columna.*/
+.card-container{
+  display: flex;
+  flex-direction: column; /* Apila las tarjetas una debajo de otra */
+  align-items: center; /* Centra las tarjetas en el eje horizontal */
+  gap: 20px; /* Agrega espacio entre las tarjetas */
+  margin-top: 50px;
+  
+}
+
+
+/*----------TARJETAS INDIVIDUALES------------*/
+.card {
+    background-color: var(--color-de-tarjeta);
+    border: 8px ridge rgb(248, 0, 153);
+    border-radius: 8px;
+    padding: 20px; /*espacio interno de la tarjeta*/
+    width: 600px; /* Un ancho fijo para todas las tarjetas */
+   
+    /*
+    --- EFECTO DE RESPLANDOR ---
+    Añadimos múltiples sombras para un brillo más intenso y profundo.
+  */
+    box-shadow: 10px 5px 5px rgb(212, 53, 151); /*Sombra inferior*/
+    
+    /*flexbox*/
+    display: flex;
+    flex-direction: row; /* Apila los elementos internos (letra, texto, botón) verticalmente */
+    align-items: center;
+    justify-content:space-between; /* Distribuye el espacio entre los elementos */
+    gap: 15px; /* Separación entre los elementos internos */
+    
+}
+
+/*Selector de pseudoclase*/
+.card:hover{
+    transform: translateY(-5px); /*Mueve la tarjeta 5px hacia arriba*/
+    box-shadow:
+    0 0 10px #ffffff,       /* Primer brillo: más cercano y blanco */
+    0 0 20px #fa00af,       /* Segundo brillo: más difuso y blanco */
+    0 0 30px #ffaedb,       /* Tercer brillo: un toque de color amarillo brillante */
+    0 0 40px #eb22a8;       /* Cuarto brillo: más grande y con color */
+}
+
+
+span{
+    
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto; /*Mantiene la proporcion de  la imagen al cambiar el ancho*/ 
+    border-radius: 20px;
+}
+
+button{
+    background-color: var(--color-botones);
+    border-radius: 10px;
+    padding: 6px 12px;
+
+}
