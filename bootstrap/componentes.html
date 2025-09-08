@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre mí: Jessica Martínez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="stylesheet" href="./componentes.css">
+    <link rel="icon" type="image/png" href="/img/pinguino-de-magallanes.png">
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">JM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre mí</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mi experiencia
+          </a>
+          <ul class="dropdown-menu">
+            <!--href cuando le aprietas te lleva al sitio web-->
+            <!--tarjet="blank" es para que abrir otra pestaña y rel="noopener noreferrer" sirve para proteger a los usuarios cuando entren a un link externo y que no vean el URL de origen-->
+           <li><a class="dropdown-item" href="https://expocenotes.com/" target="_blank" rel="noopener noreferrer">Trabajo</a></li>
+            <li><a class="dropdown-item" href="https://www.uv.mx/veracruz/simposio-rcec/" target="_blank" rel="noopener noreferrer">Congresos</a></li>
+            <li><a class="dropdown-item" href="https://programadelfin.org.mx/" target="_blank" rel="noopener noreferrer">Verano de investigación</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <!--Fila #1-sección principal-->
+  <div class="row align-items-center">
+    <!--columna #1-->
+    <div class="col-md-6 text-center">
+      <!--Text-primary es para asignar un color diferente-->
+      <h1 class="display-4-fw-bold">Soy <span class="mi-color-nombre">Jessica Martínez</span> </h1>
+      <!--my: utilidad de espaciado, significa que el margin se aplicará al eje y (vertical), o sea arriba y abajo-->
+      <p class="lead my-3">Desarrolladora web junior de día, bióloga marina de noche. Y vivo enamorada de las aves</p>
+      <button type="button" class="btn btn-danger"><a href="https://www.linkedin.com/in/jessica-mart%C3%ADnez-%C3%A1lvarez/" class="card-link" target="_blank" rel="noopener noreferrer">¡Contáctame!</a></button>    
+    </div>
+    
+    <!--columna #2-->
+    <!--mt-md-0 puede ser una opcion cuando queremos que se comporte de diferente manera dependiendo del tamaño-->
+    <div class="col-md-6 mt-4 ">
+       <img src="../img/foto.jpeg" alt="Fotografía de Jessica Martínez con una chamarra verde con estampado de barcos y una playera blanca, enseñando con su mano a la altura de la cara un ternurin de pingüino y con un semblante feliz" class="img-fluid rounded-circle">
+    </div>
+  </div>
+
+  <!--Fila #2 del grid-sección de tarjetas-->
+  <div class="row my-5">
+    <!--div.col*3-->
+    <!--columna #1-Tarjeta de habilidades técnicas-->
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Habilidades técnicas</h5>
+  </div>
+    <!--Utilizando el componente acordeón de Bootstrap-->
+  <div class="accordion accordion-flush" id="acordeonHabilidadesTecnicas">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="false" aria-controls="collapseHTML">
+            HTML
+          </button>
+        </h2>
+        <div id="collapseHTML" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesTecnicas">
+          <div class="accordion-body">
+            Conocimiento en la estructura y semántica de documentos web.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="false" aria-controls="collapseJS">
+            JavaScript
+          </button>
+        </h2>
+        <div id="collapseJS" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesTecnicas">
+          <div class="accordion-body">
+            Habilidades para crear interactividad y dinamismo en sitios web.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS" aria-expanded="false" aria-controls="collapseCSS">
+            CSS
+          </button>
+        </h2>
+        <div id="collapseCSS" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesTecnicas">
+          <div class="accordion-body">
+            Capacidad para diseñar y estilizar la presentación de páginas web.
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card-body">
+      <a href="https://www.linkedin.com/in/jessica-mart%C3%ADnez-%C3%A1lvarez/" class="card-link" target="_blank" rel="noopener noreferrer">Aquí puedes ver mis certificados</a>
+    </div>
+  </div>
+</div>
+
+    <!--columna #2-Tarjeta de experiencia-->
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Experiencia</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Profesional y académica</h6>
+    <p class="card-text">Bióloga marina con experiencia en el monitoreo de aves en el estado de Yucatán y actualmente entrando al mundo del desarrollo web.</p>
+    <a href="https://github.com/JessicaMarAlva29" class="card-link" target="_blank" rel="noopener noreferrer">Conoce mis proyectos</a>
+  </div>
+</div>
+    </div>
+
+
+
+  <!--columna #3-Tarjeta de habilidades blandas-->
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Habilidades blandas</h5>
+  </div>
+   <div class="accordion accordion-flush" id="acordeonHabilidadesBlandas">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLiderazgo" aria-expanded="false" aria-controls="collapseLiderazgo">
+            Liderazgo
+          </button>
+        </h2>
+        <div id="collapseLiderazgo" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesBlandas">
+          <div class="accordion-body">
+            Habilidad para guiar y motivar equipos hacia metas comunes.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEquipo" aria-expanded="false" aria-controls="collapseEquipo">
+            Trabajo en equipo
+          </button>
+        </h2>
+        <div id="collapseEquipo" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesBlandas">
+          <div class="accordion-body">
+            Capacidad para colaborar de manera efectiva y contribuir a proyectos grupales.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComunicacion" aria-expanded="false" aria-controls="collapseComunicacion">
+            Comunicación asertiva
+          </button>
+        </h2>
+        <div id="collapseComunicacion" class="accordion-collapse collapse" data-bs-parent="#acordeonHabilidadesBlandas">
+          <div class="accordion-body">
+            Habilidad para expresar ideas y opiniones de manera clara y respetuosa.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="card-body">
+      <a href="https://www.linkedin.com/in/jessica-mart%C3%ADnez-%C3%A1lvarez/" class="card-link" target="_blank" rel="noopener noreferrer">Aquí puedes ver mis certificados</a>
+    </div>
+  </div>
+</div>
+
+
+  
+  <!--fila #3-->
+<div class="row my-5">
+    <div class="col-12 text-center">
+      <!--Utilizando el componente de bagde-->
+      <h2>Mis Hobbies e Intereses</h2>
+      <p class="lead">Cuando no estoy programando, me gusta:</p>
+    </div>
+    <div class="col-12 text-center">
+      <!--fs-5 es el tamaño de fuente y el m-1 es el margin entre cada badge-->
+      <span class="badge bg-secondary fs-5 m-1">Dibujar 🎨</span>
+      <span class="badge bg-secondary fs-5 m-1">Pintar 🖼️</span>
+      <span class="badge bg-secondary fs-5 m-1">Esculpir 🏺</span>
+      <span class="badge bg-secondary fs-5 m-1">Ver videos de YouTube 📺</span>
+      <span class="badge bg-secondary fs-5 m-1">Ver películas animadas 🎬</span>
+      <span class="badge bg-secondary fs-5 m-1">Escuchar música 🎧</span>
+      <span class="badge bg-secondary fs-5 m-1">Jugar videojuegos con amigos 🎮</span>
+      <span class="badge bg-secondary fs-5 m-1">Observar aves 🐦</span>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jessica-mart%C3%ADnez-%C3%A1lvarez/" target="_blank" rel="noopener noreferrer">
+            <img src="/img/linkedin.png" alt="LinkeIn de Jessica Martínez Álvarez">
+        </a>
+        <a href="https://github.com/JessicaMarAlva29" target="_blank" rel="noopener noreferrer">
+            <img src="/img/github.png" alt="GitHub de Jessica Martínez Álvarez">
+        </a>
+        </div>
+    <p>&copy; 2024 Jessica Martínez. Todos los derechos reservados.</p>
+</footer>
+
+
+    <!--Este es el script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
